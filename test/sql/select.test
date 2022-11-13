@@ -1,0 +1,14 @@
+statement ok
+create table t1(a int, b int, c int);
+
+statement ok
+insert into t1 values (0,4,7),(1,5,8),(2,7,9),(2,8,1);
+
+
+query II
+select a from t1;
+----
+0
+1
+2
+2

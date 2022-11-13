@@ -342,3 +342,4 @@ zig-cache/*
 
 # .db files
 *.db
+.cpptree.*

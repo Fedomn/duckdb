@@ -1,0 +1,7 @@
+query II
+select a, (select max(t3.b) from '/Users/frankma/dev/db/olap/duckdb/data/csv/t3.csv' t3 where t3.a = t1.a) max_b from '/Users/frankma/dev/db/olap/duckdb/data/csv/t1.csv' t1;
+----
+0 4
+1
+2 7
+2 7
